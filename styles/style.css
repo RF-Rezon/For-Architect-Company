@@ -39,12 +39,11 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   margin-top: 5rem;
-  background-color: rgb(5, 146, 247);
+  background-color: rgba(47, 167, 227, 0.191);
   min-height: 476rem;
 }
 header {
   height: 100%;
-  background-color: rgb(255, 149, 0);
 }
 .nav {
   display: flex;
@@ -55,6 +54,7 @@ header {
   font-weight: var(--font-weight-seventH);
   font-size: 4.5rem;
   line-height: 5.3rem;
+  color: #131313;
 }
 .nav__links {
   flex: 1;
@@ -78,12 +78,10 @@ header {
   font-weight: var(--font-weight-fifthH);
 }
 .header__details {
-  background-color: red;
   display: flex;
   flex-direction: column;
 }
 .hdr-desc {
-  background-color: yellow;
   flex: 0 0 40%;
   padding: 5rem 10rem;
 
@@ -95,7 +93,6 @@ header {
   margin-bottom: -5rem;
 }
 .hdr-pic {
-  background-color: springgreen;
   flex: 1;
 }
 .hdr-pic > img {
@@ -137,4 +134,189 @@ header {
   text-align: center;
   color: var(--white-base);
   text-decoration: none;
+}
+.sc {
+  width: 100%;
+  display: flex;
+}
+.sc-left {
+  flex: 0 0 50%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-gap: 1rem;
+  background-color: #fff;
+  color: #444;
+}
+.sc-right {
+  flex: 0 0 50%;
+  margin-left: -1rem;
+}
+.box {
+  color: #fff;
+  border-radius: 5px;
+  width: 30rem;
+  height: 30rem;
+  padding: 20px;
+  font-size: 150%;
+}
+.a {
+  background-image: url(../images/team1.png);
+}
+.b {
+  background-image: url(../images/team2.png);
+}
+.c {
+  background-image: url(../images/team3.png);
+}
+.d {
+  background-image: url(../images/team4.png);
+}
+.sc-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sc-right__title {
+  color: var(--dark-1);
+  font-weight: var(--font-weight-fifthH);
+  font-size: 4.5rem;
+  line-height: 5.3rem;
+  text-align: left;
+  padding: 1rem 1rem 0.5rem 2.5rem;
+}
+.ghiya {
+  color: var(--gray-2);
+}
+.middle {
+  color: var(--dark-1);
+  font-weight: var(--font-weight-seventH);
+}
+.org {
+  color: var(--orange-1);
+  font-weight: var(--font-weight-seventH);
+}
+.sc-right__desco {
+  font-weight: var(--font-weight-fourthH);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  color: var(--gray-2);
+  padding: 1rem 1rem 0.5rem 2.5rem;
+}
+.sc-right__desc {
+  font-weight: var(--font-weight-fourthH);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  color: var(--gray-2);
+}
+.fixed {
+  padding: 1rem 1rem 1rem 2.5rem;
+}
+.sc-right-box {
+  margin-left: 2rem;
+}
+.ts {
+  height: 106.9rem;
+  display: flex;
+}
+.ts-left {
+  flex: 0 0 50%;
+}
+.ts-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ts-left__upside {
+}
+.ts-left__lowside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.ts-right {
+  flex: 0 0 50%;
+  background-image: url(../images/architect.png);
+  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 98rem;
+
+  position: relative;
+}
+.small-box {
+  width: 55.5rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+  border-radius: 8px;
+  margin: 1.2rem 0;
+  padding: 2rem 1rem;
+}
+.small-box__title {
+  font-weight: var(--font-weight-sixthH);
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: var(--dark-1);
+  padding-left: 2.5rem;
+}
+/* .fixed {
+  padding: 1rem 1rem 0.5rem 2.5rem;
+} */
+.experience-box {
+  position: absolute;
+  width: 34.2rem;
+  height: 20rem;
+  background-color: #ff900e;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+.year {
+  font-weight: var(--font-weight-seventH);
+  font-size: 6.5rem;
+  line-height: 7rem;
+  color: var(--white-base);
+}
+.exp {
+  font-weight: var(--font-weight-fifthH);
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: var(--white-base);
+}
+.ts-left__upside-title {
+  font-weight: var(--font-weight-seventH);
+  font-size: 4.5rem;
+  line-height: 5.3rem;
+  color: #131313;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.ts-left__upside-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.7rem;
+  background-color: var(--orange-1);
+}
+
+.ts-left__upside-desc {
+  font-weight: var(--font-weight-fourthH);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  color: var(--gray-2);
+  padding: 2rem 1rem 0 0;
 }
