@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@300&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark-1: #131313;
+  --gray-1: #424242;
+  --gray-2: #727272;
+  --gray-3: #a1a1a1;
+  --white-1: #d0d0d0;
+  --white-2: #e7e7e7;
+  --white-3: #f3f3f3;
+  --white-base: #ffffff;
+  --orange-1: #ff900e;
+
+  --font-weight-fourthH: 400;
+  --font-weight-fifthH: 500;
+  --font-weight-sixthH: 600;
+  --font-weight-seventH: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  background-color: rgb(5, 146, 247);
+  min-height: 476rem;
+}
+header {
+  height: 100%;
+  background-color: rgb(255, 149, 0);
+}
+.nav {
+  display: flex;
+}
+.logo {
+  flex: 0 0 26%;
+
+  font-weight: var(--font-weight-seventH);
+  font-size: 4.5rem;
+  line-height: 5.3rem;
+}
+.nav__links {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.link {
+  padding: 1rem 0.5rem;
+  list-style: none;
+}
+.link:not(:last-child) {
+  margin-right: 4.5rem;
+}
+.anchor-link {
+  text-decoration: none;
+  color: var(--gray-1);
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-weight-fifthH);
+}
+.header__details {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.hdr-desc {
+  background-color: yellow;
+  flex: 0 0 40%;
+  padding: 5rem 10rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hdr-desc:last-child {
+  margin-bottom: -5rem;
+}
+.hdr-pic {
+  background-color: springgreen;
+  flex: 1;
+}
+.hdr-pic > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.big {
+  font-weight: var(--font-weight-seventH);
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  text-align: center;
+  color: var(--dark-1);
+  margin: 2rem;
+}
+.small {
+  font-weight: var(--font-weight-fourthH);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: var(--gray-2);
+  margin: 2rem;
+}
+
+.for-button > button {
+  width: 18rem;
+  height: 6.4rem;
+  background-color: var(--orange-1);
+  border-radius: 0.8rem;
+  border: none;
+}
+.hdr-desc-anchor {
+  font-weight: var(--font-weight-fifthH);
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: var(--white-base);
+  text-decoration: none;
+}
