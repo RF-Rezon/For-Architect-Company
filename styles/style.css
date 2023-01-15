@@ -46,6 +46,7 @@ header {
   height: 100%;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
+  background-color: rgba(255, 144, 14, 0.1);
 }
 .nav {
   display: flex;
@@ -128,6 +129,7 @@ header {
   background-color: var(--orange-1);
   border-radius: 0.8rem;
   border: none;
+  margin: 1rem 0;
 }
 .hdr-desc-anchor {
   font-weight: var(--font-weight-fifthH);
@@ -188,6 +190,7 @@ header {
   line-height: 5.3rem;
   text-align: left;
   padding: 1rem 1rem 0.5rem 2.5rem;
+  margin-bottom: 1rem;
 }
 .ghiya {
   color: var(--gray-2);
@@ -219,7 +222,7 @@ header {
   padding: 1rem 1rem 1rem 2.5rem;
 }
 .sc-right-box {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 .ts {
   height: 106.9rem;
@@ -251,6 +254,7 @@ header {
   background-repeat: no-repeat;
   object-fit: cover;
   height: 98rem;
+  transform: scaleY(1.03);
 
   position: relative;
 }
