@@ -40,10 +40,12 @@ body {
   margin: 0 auto;
   margin-top: 5rem;
   background-color: rgba(47, 167, 227, 0.191);
-  min-height: 476rem;
+  min-height: 458rem;
 }
 header {
   height: 100%;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .nav {
   display: flex;
@@ -100,7 +102,7 @@ header {
   height: 100%;
   display: block;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .big {
@@ -138,6 +140,8 @@ header {
 .sc {
   width: 100%;
   display: flex;
+  margin: 4rem 0;
+  padding: 2rem 0;
 }
 .sc-left {
   flex: 0 0 50%;
@@ -219,6 +223,8 @@ header {
 }
 .ts {
   height: 106.9rem;
+  padding: 2rem 0;
+  margin: 4rem 0;
   display: flex;
 }
 .ts-left {
@@ -321,8 +327,11 @@ header {
   padding: 2rem 1rem 0 0;
 }
 .fs {
-  height: 47rem;
+  margin: 3rem 0;
+  height: 38rem;
   display: flex;
+  padding: 1rem 0;
+  margin-bottom: 14rem;
   flex-direction: column;
 }
 .fs-header {
@@ -353,11 +362,13 @@ header {
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 3rem;
-  /* transform: rotate(90deg); */
-
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.fs-body__box:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform 0.5s cubic-bezier(1, -0.01, 0, 0.99);
 }
 .fs-body__box > img {
   height: 4.5rem;
@@ -381,9 +392,11 @@ header {
 
 .blur-video {
   position: relative;
-  margin-top: 14rem;
+  /* margin-top: 14rem; */
   border-top: 1rem solid var(--orange-1);
+  padding: 14rem 0;
   /* margin-bottom: 18rem; */
+  margin: -1rem 0;
 }
 
 .bv-title {
@@ -405,6 +418,9 @@ header {
 
 footer {
   height: 47rem;
+  /* padding: 2rem 0; */
+  /* margin: 2rem 0; */
+  /* margin-top: 2rem; */
 }
 .supporter {
   display: flex;
