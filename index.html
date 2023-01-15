@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Architect App</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <nav class="nav">
+        <nav class="nav" data-aos="fade-down">
           <p class="logo">G3 Architects</p>
           <ul class="nav__links">
             <li class="link"><a href="#" class="anchor-link">Home</a></li>
@@ -21,7 +22,7 @@
           </ul>
         </nav>
         <div class="header__details">
-          <div class="hdr-desc">
+          <div class="hdr-desc" data-aos="fade-down">
             <div class="paragaraph-part">
               <p class="big">Brand New Group of Architects</p>
               <p class="small">
@@ -38,29 +39,28 @@
         </div>
       </header>
       <div class="sc">
-        <div class="sc-left">
+        <div class="sc-left" data-aos="fade-left">
           <div class="box a">A</div>
           <div class="box b">B</div>
           <div class="box c">C</div>
           <div class="box d">D</div>
         </div>
-        <div class="sc-right">
-          <div class="sc-right-box">
-            <div class="sc-right__title">
-              <span class="ghiya">Quick list</span> <span class="middle">of Our</span> <span class="org">Features</span>
-            </div>
-            <p class="sc-right__desco">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even.
-            </p>
-            <div class="for-button fixed">
-              <button><a class="hdr-desc-anchor" href="#">Explore More</a></button>
-            </div>
+
+        <div class="sc-right-box" data-aos="fade-right">
+          <div class="sc-right__title">
+            <span class="ghiya">Quick list</span> <span class="middle">of Our</span> <span class="org">Features</span>
+          </div>
+          <p class="sc-right__desco">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even.
+          </p>
+          <div class="for-button fixed">
+            <button><a class="hdr-desc-anchor" href="#">Explore More</a></button>
           </div>
         </div>
       </div>
       <div class="ts">
-        <div class="ts-left">
+        <div class="ts-left" data-aos="zoom-out-right">
           <div class="ts-box">
             <div class="ts-left__upside">
               <p class="ts-left__upside-title">Features you will love & enjoy</p>
@@ -101,14 +101,15 @@
             </div>
           </div>
         </div>
-        <div class="ts-right">
+        <div class="ts-right" data-aos="zoom-out-left">
+          <img src="./images/architect.png" alt="architect" />
           <div class="experience-box">
             <p class="year">10+ YEAR</p>
             <p class="exp">EXPERIENCE</p>
           </div>
         </div>
       </div>
-      <div class="fs">
+      <div class="fs" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <div class="fs-header">
           <p class="fs-header__title">Some Facts</p>
           <p class="fs-header__desc">
@@ -139,15 +140,16 @@
         </div>
       </div>
 
-      <section class="blur-video">
+      <div class="blur-video">
         <video width="100%" autoplay loop>
           <source src="./video/Building - 21472.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <p class="bv-title">WE BUILD YOUR DREAM</p>
-      </section>
+      </div>
 
-      <footer>
+      <footer data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        >
         <div class="supporter">
           <p class="supporter__big">Our Sponspors</p>
           <p class="supporter__small">
@@ -166,5 +168,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
